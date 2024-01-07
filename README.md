@@ -4,9 +4,9 @@
  echo -n 'root' | base64
 echo -n 'example' | base64
  kubectl apply -f secrets-mongodb.yml 
-   28  kubectl get secret
-   29  kubectl apply -f mongodb-deployment.yml 
-   30  kubectl get pods
+ kubectl get secret 
+ kubectl apply -f mongodb-deployment.yml  
+ kubectl get pods
    31  kubectl get pods --watch 
    32  kubectl apply -f mongodb-service.yml 
    33  kubectl describe svc mongodb-service
